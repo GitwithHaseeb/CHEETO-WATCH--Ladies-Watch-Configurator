@@ -7,6 +7,7 @@ A production-quality, multi-page marketing and product configurator experience f
 ## Table of contents
 
 - [Repository](#repository)
+- [Live site](#live-site)
 - [Features](#features)
 - [Tech stack](#tech-stack)
 - [Project structure](#project-structure)
@@ -23,6 +24,16 @@ A production-quality, multi-page marketing and product configurator experience f
 Public source and full documentation for this static site live on GitHub:
 
 **[https://github.com/ghaniatanveer/CHEETO-Watches-Website](https://github.com/ghaniatanveer/CHEETO-Watches-Website)**
+
+---
+
+## Live site
+
+The experience is deployed on **Vercel** (production):
+
+**[https://cheeto-watch-ladies-watch-configura.vercel.app/](https://cheeto-watch-ladies-watch-configura.vercel.app/)**
+
+Open the link in a modern browser to explore the home page, collections, interactive configurator, and About section. Deployments typically track the default branch of the connected Git repository.
 
 ---
 
@@ -127,7 +138,7 @@ Other static servers (Python `http.server`, VS Code Live Server, etc.) work equa
 ## Credits
 
 - **Brand & site:** Cheeto Watches (concept project).
-- **Founders (About):** Ghania Tanveer — creative direction; Muhammad Haseeb — product and technology direction.
+- **Founders (About):** [Ghania Tanveer](https://www.linkedin.com/in/ghania-tanveer-894625311/) — creative direction; Muhammad Haseeb — product and technology direction.
 - **Design & development:** Ghania Tanveer and Muhammad Haseeb.
 - **Hero tubes inspiration:** Implementation follows the **threejs-components** cursor tubes pattern; concept lineage is noted in `js/tubes-hero.js`.
 
