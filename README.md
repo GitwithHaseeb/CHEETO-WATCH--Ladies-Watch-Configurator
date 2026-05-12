@@ -55,7 +55,7 @@ There is **no build step** and **no package manager** required to run the site.
 ## Project structure
 
 ```
-citizen-l-configurator/
+./
 ├── index.html              # Home + hero tubes + tilted card
 ├── collections.html        # Catalog filters / sort
 ├── configurator.html       # 3-step configurator
@@ -89,7 +89,7 @@ Open `index.html` in a modern desktop browser. Some features (e.g. ES module scr
 From the **repository root** or any parent directory:
 
 ```bash
-npx serve "citizen-l-configurator"
+npx serve .
 ```
 
 Then visit the URL printed in the terminal (for example `http://localhost:3000`).
