@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-label="SQUARE style watch">
+  <defs>
+    <linearGradient id="sbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8faf9"/>
+      <stop offset="100%" style="stop-color:#b8d4c8"/>
+    </linearGradient>
+    <linearGradient id="sq" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0e0e0"/>
+      <stop offset="100%" style="stop-color:#c6a43f"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" fill="url(#sbg)"/>
+  <rect x="330" y="175" width="240" height="250" rx="42" fill="url(#sq)" stroke="#d4a574" stroke-width="2"/>
+  <rect x="355" y="200" width="190" height="200" rx="32" fill="#fffdf9"/>
+  <circle cx="450" cy="300" r="5" fill="#2d2d2d"/>
+  <text x="450" y="540" text-anchor="middle" fill="#8e8e8e" font-family="Georgia,serif" font-size="20" font-style="italic">SQUARE</text>
+</svg>

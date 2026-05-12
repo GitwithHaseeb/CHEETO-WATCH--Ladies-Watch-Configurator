@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Build your Cheeto Watches timepiece: choose ROUND, ARCLY, or SQUARE, customize finishes, and preview your composition." />
+  <title>CHEETO WATCHES | Configurator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/configurator.css" />
+</head>
+<body>
+  <div class="particles" id="particles"></div>
+  <header class="site-header">
+    <nav class="container nav">
+      <a href="index.html" class="logo">CHEETO WATCHES</a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span class="menu-toggle__bars" aria-hidden="true"></span></button>
+      <div class="nav-links" id="navLinks">
+        <a href="collections.html">Collections</a>
+        <a href="configurator.html">Configurator</a>
+        <a href="about.html">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="section-title reveal">Watch Configurator</h1>
+      <p class="section-lede reveal">Compose case, dial, strap, and crystal details in three calm steps. Your selections update price and preview instantly.</p>
+      <div class="progress reveal">
+        <div class="progress-step active" data-step="1">1. Collection</div>
+        <div class="progress-step" data-step="2">2. Components</div>
+        <div class="progress-step" data-step="3">3. Preview</div>
+      </div>
+
+      <section class="config-layout">
+        <div>
+          <div class="config-step reveal" id="step1">
+            <h2>Step 1: Choose Collection</h2>
+            <div class="option-grid" id="collectionOptions"></div>
+            <button class="btn btn-primary" id="toStep2" type="button">Continue</button>
+          </div>
+
+          <div class="config-step hidden" id="step2">
+            <h2>Step 2: Customize Components</h2>
+            <form id="configForm" novalidate>
+              <label>Case Color<select id="caseColor" required></select></label>
+              <label>Dial Color<select id="dialColor" required></select></label>
+              <label>Strap Type<select id="strapType" required></select></label>
+              <label>Crystal<select id="crystal" required></select></label>
+              <label>Engraving (max 3 chars)
+                <input id="engraving" maxlength="3" pattern="^[A-Za-z0-9]{0,3}$" placeholder="Optional" />
+              </label>
+              <div class="config-actions">
+                <button type="button" class="btn btn-ghost" id="backTo1">Back</button>
+                <button type="button" class="btn btn-primary" id="toStep3">Preview</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="config-step hidden" id="step3">
+            <h2>Step 3: Preview &amp; Add</h2>
+            <div class="preview-card">
+              <div class="preview-loader" id="previewLoader"></div>
+              <img id="watchPreview" src="" alt="Watch preview" />
+              <p id="configSummary"></p>
+              <p class="price" id="price">$0</p>
+            </div>
+            <div class="config-actions">
+              <button type="button" class="btn btn-ghost" id="backTo2">Back</button>
+              <button type="button" class="btn btn-secondary" id="wishlistBtn">Add to Wishlist</button>
+              <button type="button" class="btn btn-primary" id="quoteBtn">Request Quote</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-badge">&copy; 2026 Cheeto Watches</p>
+        <p class="footer-credit">Design by Ghania Tanveer and Muhammad Haseeb</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast">Saved</div>
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg></button>
+
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/configurator.js"></script>
+</body>
+</html>

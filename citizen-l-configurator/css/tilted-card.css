@@ -1,0 +1,89 @@
+/* Vanilla TiltedCard — 3D tilt + hover scale (dark theme aligned) */
+.hero-visual {
+  pointer-events: auto;
+}
+
+.tilted-card {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  perspective: 900px;
+  perspective-origin: 50% 45%;
+  min-height: min(52vw, 420px);
+}
+
+.tilted-card__stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: min(52vw, 400px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tilted-card__inner {
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.tilted-card__inner img {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-warm), var(--shadow);
+}
+
+.tilted-card__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 18px;
+  pointer-events: none;
+  transform: translateZ(36px);
+}
+
+.tilted-card__badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #f5f1ea;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+}
+
+.tilted-card__hint {
+  display: none;
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: 0.75rem;
+}
+
+@media (max-width: 639px) {
+  .tilted-card__hint {
+    display: block;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tilted-card__inner {
+    transition: none;
+  }
+}

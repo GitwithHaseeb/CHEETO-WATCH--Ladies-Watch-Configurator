@@ -1,0 +1,55 @@
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1), transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero-copy.reveal { transition-duration: 0.85s; }
+
+.float { animation: floating 5s ease-in-out infinite; }
+.pulse { animation: pulse 2.6s ease-in-out infinite; }
+
+@keyframes floating {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes pulse {
+  0%,100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+@keyframes drift {
+  from { transform: translateY(0); }
+  to { transform: translateY(-100vh); }
+}
+
+.price-flip { animation: priceFlip 0.45s cubic-bezier(0.22, 1, 0.36, 1); }
+@keyframes priceFlip {
+  0% { opacity: .15; transform: translateY(8px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.toast {
+  position: fixed; left: 50%; bottom: 2rem; transform: translateX(-50%) translateY(8px);
+  background: rgba(30, 28, 24, 0.96); color: #f5f1ea; padding: .7rem 1.15rem; border-radius: 999px;
+  font-size: 0.88rem; font-weight: 500; letter-spacing: 0.02em;
+  border: 1px solid rgba(212, 165, 116, 0.25);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5);
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+.btn { position: relative; overflow: hidden; }
+.btn::before {
+  content: ""; position: absolute; inset: 50% auto auto 50%;
+  width: 0; height: 0; border-radius: 999px; background: rgba(255,255,255,.22);
+  transform: translate(-50%, -50%); transition: width 0.45s cubic-bezier(0.22, 1, 0.36, 1), height 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.btn:hover::before { width: 220%; height: 220%; }

@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cheeto Watches ladies watch configurator: light, elegant ROUND, ARCLY, and SQUARE collections with sustainable luxury." />
+  <title>CHEETO WATCHES | Elevated by Radiance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/tubes-hero.css" />
+  <link rel="stylesheet" href="css/tilted-card.css" />
+</head>
+<body>
+  <div class="particles" id="particles"></div>
+  <header class="site-header">
+    <nav class="container nav">
+      <a href="index.html" class="logo">CHEETO WATCHES</a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span class="menu-toggle__bars" aria-hidden="true"></span></button>
+      <div class="nav-links" id="navLinks">
+        <a href="collections.html">Collections</a>
+        <a href="configurator.html">Configurator</a>
+        <a href="about.html">About</a>
+        <a href="#sustainability">Sustainability</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-tubes" id="heroTubesLayer" aria-hidden="true">
+        <canvas id="heroTubesCanvas"></canvas>
+        <div class="hero-tubes-veil"></div>
+      </div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Cheeto Watches</p>
+          <h1>Elevated by Radiance</h1>
+          <p class="hero-subtitle">Colours dancing in light. Shimmer sleeping beneath water.</p>
+          <p>Discover three luminous families, each shaped by nature, light, and quiet confidence.</p>
+          <a class="btn btn-primary" href="#collections">Explore Collections</a>
+        </div>
+        <div class="hero-visual">
+          <figure
+            class="tilted-card"
+            id="heroTiltedCard"
+            data-rotate-amplitude="12"
+            data-scale-hover="1.08"
+          >
+            <div class="tilted-card__stage">
+              <div class="tilted-card__inner">
+                <img
+                  src="assets/images/hero-tilted-watch.png"
+                  width="800"
+                  height="600"
+                  alt="Cheeto Watches timepiece with red dial and silver stainless steel bracelet"
+                  onerror="this.onerror=null;this.src='assets/images/hero-watch.svg'"
+                />
+                <div class="tilted-card__overlay" aria-hidden="true">
+                  <span class="tilted-card__badge">Editorial</span>
+                </div>
+              </div>
+            </div>
+            <p class="tilted-card__hint">Tilt effect is best on desktop - tap collections below on mobile.</p>
+          </figure>
+          <span class="glow-orb" aria-hidden="true"></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="collections" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Signature Collections</h2>
+        <p class="section-lede reveal">Pearl-soft dials, sunrise arcs, and softly squared silhouettes, designed to feel as effortless as morning light on skin.</p>
+        <div class="card-grid">
+          <article class="watch-card reveal" data-parallax>
+            <img src="https://images.unsplash.com/photo-1619134778706-7015533a6150?auto=format&fit=crop&w=900&q=80" width="900" height="600" alt="ROUND collection watch" onerror="this.onerror=null;this.src='assets/images/placeholder-watch.svg'" />
+            <div class="card-content">
+              <h3>ROUND &mdash; Happiness Blossoms</h3>
+              <p>Inspired by May bells and delicate joy in every glance.</p>
+              <p class="tagline">Joy in every glance</p>
+              <a class="btn btn-ghost" href="collections.html#round">Discover ROUND</a>
+            </div>
+          </article>
+
+          <article class="watch-card reveal" data-parallax>
+            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=900&q=80" width="900" height="600" alt="ARCLY collection watch" onerror="this.onerror=null;this.src='assets/images/catalog-arcly.svg'" />
+            <div class="card-content">
+              <h3>ARCLY &mdash; Light Your Spirit</h3>
+              <p>Arc-shaped silhouette inspired by sunrise brilliance.</p>
+              <p class="tagline">Where light meets wrist</p>
+              <a class="btn btn-ghost" href="collections.html#arcly">Discover ARCLY</a>
+            </div>
+          </article>
+
+          <article class="watch-card reveal" data-parallax>
+            <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=900&q=80" width="900" height="600" alt="SQUARE collection watch" onerror="this.onerror=null;this.src='assets/images/catalog-square.svg'" />
+            <div class="card-content">
+              <h3>SQUARE &mdash; Stylish and Radiant</h3>
+              <p>Editorial boldness softened by rounded geometry.</p>
+              <p class="tagline">Bold elegance</p>
+              <a class="btn btn-ghost" href="collections.html#square">Discover SQUARE</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sustainability" class="section accent-section reveal">
+      <div class="container two-col">
+        <div>
+          <h2 class="section-title">The power of nature</h2>
+          <p>Cheeto Watches light-powered movements capture ambient light and turn it into enduring energy. No regular battery changes, only elegant continuity.</p>
+          <p>Our promise to the future: sustainable materials, ethical production, and timeless craftsmanship.</p>
+        </div>
+        <div class="nature-panel pulse">
+          <p>&ldquo;The choices we make now impact our shared future.&rdquo;</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Receive radiance in your inbox</h3>
+        <form class="newsletter" id="newsletterForm">
+          <input type="email" placeholder="Your email address" required />
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div>
+        <p>Follow us: <a href="#">Instagram</a> &middot; <a href="#">Pinterest</a></p>
+        <p class="footer-badge">&copy; 2026 Cheeto Watches &middot; Sustainable luxury</p>
+        <p class="footer-credit">Design by Ghania Tanveer and Muhammad Haseeb</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg></button>
+
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/tilted-card.js"></script>
+  <script type="module" src="js/tubes-hero.js"></script>
+</body>
+</html>

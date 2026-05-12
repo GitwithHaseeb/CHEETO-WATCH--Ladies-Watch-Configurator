@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore Cheeto Watches ROUND, ARCLY, and SQUARE models with materials, straps, and pricing." />
+  <title>CHEETO WATCHES | Collections</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+  <div class="particles" id="particles"></div>
+  <header class="site-header">
+    <nav class="container nav">
+      <a href="index.html" class="logo">CHEETO WATCHES</a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span class="menu-toggle__bars" aria-hidden="true"></span></button>
+      <div class="nav-links" id="navLinks">
+        <a href="collections.html">Collections</a>
+        <a href="configurator.html">Configurator</a>
+        <a href="about.html">About</a>
+        <a href="about.html#sustainability-pledge">Sustainability</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="section">
+    <div class="container reveal">
+      <h1 class="section-title">All Collections</h1>
+      <p class="section-lede">Refine by case finish and strap, then open the configurator to compose your own light story.</p>
+      <div class="filters">
+        <select id="materialFilter" aria-label="Filter by case material">
+          <option value="all">Case Material: All</option>
+          <option value="steel">Steel</option>
+          <option value="rose-gold">Rose Gold</option>
+          <option value="two-tone">Two-tone</option>
+        </select>
+        <select id="strapFilter" aria-label="Filter by strap type">
+          <option value="all">Strap Type: All</option>
+          <option value="leather">Leather</option>
+          <option value="metal">Metal</option>
+          <option value="bracelet">Bracelet</option>
+        </select>
+        <select id="sortBy" aria-label="Sort watches">
+          <option value="popular">Sort: Popular</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="newest">Newest</option>
+        </select>
+      </div>
+    </div>
+
+    <section id="round" class="collection-block reveal">
+      <div class="container">
+        <h2>ROUND &mdash; &ldquo;Happiness Blossoms&rdquo;</h2>
+        <p class="collection-quote">Soft pearl dials inspired by lily-of-the-valley serenity.</p>
+        <div class="card-grid models" data-collection="round"></div>
+      </div>
+    </section>
+
+    <section id="arcly" class="collection-block reveal">
+      <div class="container">
+        <h2>ARCLY &mdash; &ldquo;Light Your Spirit&rdquo;</h2>
+        <p class="collection-quote">An arc that captures first light in rose gold glow.</p>
+        <div class="card-grid models" data-collection="arcly"></div>
+      </div>
+    </section>
+
+    <section id="square" class="collection-block reveal">
+      <div class="container">
+        <h2>SQUARE &mdash; &ldquo;Stylish and Radiant&rdquo;</h2>
+        <p class="collection-quote">Modern structure softened by feminine curvature.</p>
+        <div class="card-grid models" data-collection="square"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>Receive radiance in your inbox.</p>
+      <div>
+        <p class="footer-badge">&copy; 2026 Cheeto Watches</p>
+        <p class="footer-credit">Design by Ghania Tanveer and Muhammad Haseeb</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg></button>
+
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

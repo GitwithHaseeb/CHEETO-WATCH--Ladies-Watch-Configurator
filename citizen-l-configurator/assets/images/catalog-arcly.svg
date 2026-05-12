@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-label="ARCLY style watch">
+  <defs>
+    <linearGradient id="abg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff9f5"/>
+      <stop offset="100%" style="stop-color:#fce8dc"/>
+    </linearGradient>
+    <linearGradient id="ac" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0c9a8"/>
+      <stop offset="100%" style="stop-color:#d4a574"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" fill="url(#abg)"/>
+  <path d="M380 420 Q360 300 380 180 Q450 140 520 180 Q540 300 520 420 Q450 460 380 420 Z" fill="url(#ac)" stroke="#c6a43f" stroke-width="2"/>
+  <ellipse cx="450" cy="300" rx="55" ry="85" fill="#fffdf9" opacity="0.95"/>
+  <circle cx="450" cy="300" r="5" fill="#c6a43f"/>
+  <text x="450" y="540" text-anchor="middle" fill="#8e8e8e" font-family="Georgia,serif" font-size="20" font-style="italic">ARCLY</text>
+</svg>
