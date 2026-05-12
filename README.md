@@ -1,5 +1,7 @@
 # Cheeto Watches — Ladies Watch Configurator
 
+*This repository is published by **[Ghania Tanveer](https://www.linkedin.com/in/ghania-tanveer-894625311/)**. She created this project **together with [Muhammad Haseeb](https://www.linkedin.com/in/muhammad-haseeb-5a73bb317/)** — product and technology partner — whose work you can explore on **[GitHub @GitwithHaseeb](https://github.com/GitwithHaseeb)**.*
+
 A production-quality, multi-page marketing and product configurator experience for **Cheeto Watches**. The site presents three signature families (**ROUND**, **ARCLY**, **SQUARE**), a guided **watch configurator** with live pricing and preview, and an **About** narrative including founder profiles. The UI uses a cohesive **dark luxury** theme with warm gold accents, refined typography, and subtle motion.
 
 ---
@@ -21,9 +23,11 @@ A production-quality, multi-page marketing and product configurator experience f
 
 ## Repository
 
-Public source and full documentation for this static site live on GitHub:
+Source and documentation for this static site live on **Ghania Tanveer’s GitHub**:
 
 **[https://github.com/ghaniatanveer/CHEETO-Watches-Website](https://github.com/ghaniatanveer/CHEETO-Watches-Website)**
+
+**Collaborator — Muhammad Haseeb:** [GitHub](https://github.com/GitwithHaseeb) · [LinkedIn](https://www.linkedin.com/in/muhammad-haseeb-5a73bb317/)
 
 ---
 
@@ -138,8 +142,8 @@ Other static servers (Python `http.server`, VS Code Live Server, etc.) work equa
 ## Credits
 
 - **Brand & site:** Cheeto Watches (concept project).
-- **Founders (About):** [Ghania Tanveer](https://www.linkedin.com/in/ghania-tanveer-894625311/) — creative direction; Muhammad Haseeb — product and technology direction.
-- **Design & development:** Ghania Tanveer and Muhammad Haseeb.
+- **Founders (About):** [Ghania Tanveer](https://www.linkedin.com/in/ghania-tanveer-894625311/) — creative direction; [Muhammad Haseeb](https://www.linkedin.com/in/muhammad-haseeb-5a73bb317/) — product and technology direction ([GitHub](https://github.com/GitwithHaseeb)).
+- **Design & development:** Ghania Tanveer and Muhammad Haseeb, working together end to end.
 - **Hero tubes inspiration:** Implementation follows the **threejs-components** cursor tubes pattern; concept lineage is noted in `js/tubes-hero.js`.
 
 ---
